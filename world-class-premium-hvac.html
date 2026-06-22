@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>World Class Heating & Cooling | HVAC Repair & Installation in Cartersville, GA</title>
+  <meta name="description" content="World Class Heating & Cooling provides AC repair, heating service, HVAC installation, ventilation, and system replacement in Cartersville, GA and surrounding areas. Call (678) 768-1821." />
+  <meta name="keywords" content="HVAC Cartersville GA, AC repair Cartersville, heating repair Cartersville, HVAC installation, World Class Heating and Cooling" />
+
+  <style>
+    :root{
+      --black:#0b0d10;
+      --charcoal:#141820;
+      --soft:#f5f2ec;
+      --cream:#fbf7ef;
+      --gold:#b8924b;
+      --gold-light:#d8b66a;
+      --text:#1e232b;
+      --muted:#6b7280;
+      --line:rgba(255,255,255,.14);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    html{scroll-behavior:smooth}
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--text);
+      background:var(--cream);
+      line-height:1.6;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    .topbar{
+      background:var(--black);
+      color:#fff;
+      padding:10px 6%;
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:center;
+      font-size:.9rem;
+      letter-spacing:.02em;
+    }
+
+    .topbar strong{color:var(--gold-light)}
+
+    header{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(11,13,16,.94);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);
+    }
+
+    .nav{
+      padding:18px 6%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:#fff;
+    }
+
+    .brand{
+      font-size:1.15rem;
+      font-weight:800;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+
+    .brand span{
+      color:var(--gold-light);
+    }
+
+    .nav-links{
+      display:flex;
+      gap:24px;
+      font-size:.92rem;
+      color:#d9d9d9;
+    }
+
+    .nav-cta{
+      background:var(--gold);
+      color:#111;
+      padding:12px 20px;
+      border-radius:999px;
+      font-weight:800;
+    }
+
+    .hero{
+      min-height:88vh;
+      background:
+        linear-gradient(105deg,rgba(5,7,10,.96) 0%,rgba(5,7,10,.84) 45%,rgba(5,7,10,.32) 100%),
+        radial-gradient(circle at 75% 30%, rgba(184,146,75,.28), transparent 28%),
+        linear-gradient(135deg,#1a202b,#0b0d10);
+      color:#fff;
+      display:flex;
+      align-items:center;
+      padding:90px 6%;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero:after{
+      content:"";
+      position:absolute;
+      width:520px;
+      height:520px;
+      border:1px solid rgba(216,182,106,.18);
+      border-radius:50%;
+      right:-140px;
+      top:130px;
+    }
+
+    .hero-inner{
+      max-width:760px;
+      position:relative;
+      z-index:2;
+    }
+
+    .eyebrow{
+      color:var(--gold-light);
+      text-transform:uppercase;
+      font-weight:800;
+      letter-spacing:.18em;
+      font-size:.82rem;
+      margin-bottom:18px;
+    }
+
+    h1{
+      font-size:clamp(3rem,7vw,6.4rem);
+      line-height:.94;
+      letter-spacing:-.06em;
+      margin-bottom:26px;
+    }
+
+    .hero p{
+      font-size:1.18rem;
+      color:#e8e3d9;
+      max-width:650px;
+      margin-bottom:32px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      align-items:center;
+      margin-bottom:34px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px 24px;
+      border-radius:999px;
+      font-weight:900;
+      transition:.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--gold-light);
+      color:#111;
+      box-shadow:0 14px 40px rgba(216,182,106,.22);
+    }
+
+    .btn-primary:hover{transform:translateY(-2px)}
+
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,.24);
+      color:#fff;
+    }
+
+    .trust-strip{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+    }
+
+    .trust-pill{
+      border:1px solid rgba(255,255,255,.15);
+      background:rgba(255,255,255,.06);
+      padding:12px 16px;
+      border-radius:14px;
+      color:#f7f2e8;
+      font-size:.94rem;
+    }
+
+    .section{
+      padding:90px 6%;
+    }
+
+    .section-title{
+      max-width:850px;
+      margin-bottom:40px;
+    }
+
+    .section-title .eyebrow{color:var(--gold)}
+    .section-title h2{
+      font-size:clamp(2rem,4vw,3.8rem);
+      line-height:1;
+      letter-spacing:-.04em;
+      color:#111;
+      margin-bottom:16px;
+    }
+
+    .section-title p{
+      color:var(--muted);
+      font-size:1.05rem;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      border-radius:22px;
+      padding:30px;
+      min-height:210px;
+      box-shadow:0 24px 60px rgba(16,24,40,.06);
+    }
+
+    .card .num{
+      color:var(--gold);
+      font-weight:900;
+      margin-bottom:28px;
+      font-size:.9rem;
+      letter-spacing:.12em;
+    }
+
+    .card h3{
+      font-size:1.35rem;
+      margin-bottom:10px;
+      color:#111;
+    }
+
+    .card p{
+      color:var(--muted);
+      font-size:.96rem;
+    }
+
+    .dark-section{
+      background:var(--charcoal);
+      color:#fff;
+      padding:90px 6%;
+    }
+
+    .dark-section .section-title h2{color:#fff}
+    .dark-section .section-title p{color:#c9c9c9}
+
+    .split{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .panel{
+      background:linear-gradient(145deg,#11151d,#202632);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:28px;
+      padding:38px;
+      box-shadow:0 30px 80px rgba(0,0,0,.28);
+    }
+
+    .panel h3{
+      font-size:2rem;
+      line-height:1.1;
+      margin-bottom:16px;
+    }
+
+    .panel p{color:#d6d6d6;margin-bottom:20px}
+
+    .checklist{
+      display:grid;
+      gap:12px;
+      margin-top:20px;
+    }
+
+    .check{
+      padding:14px 16px;
+      border-radius:14px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    .reviews{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:18px;
+    }
+
+    .quote{
+      background:#fff;
+      border-radius:24px;
+      padding:34px;
+      border:1px solid rgba(0,0,0,.08);
+      box-shadow:0 24px 60px rgba(16,24,40,.06);
+    }
+
+    .stars{
+      color:var(--gold);
+      letter-spacing:.08em;
+      font-size:1.1rem;
+      margin-bottom:16px;
+    }
+
+    .quote p{
+      font-size:1.25rem;
+      color:#111;
+      margin-bottom:18px;
+    }
+
+    .quote small{
+      color:var(--muted);
+      font-weight:800;
+    }
+
+    .service-area{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+
+    .city{
+      background:#fff;
+      border:1px solid rgba(0,0,0,.08);
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:800;
+      color:#222;
+    }
+
+    .contact-section{
+      background:
+        linear-gradient(135deg,rgba(184,146,75,.95),rgba(216,182,106,.95)),
+        var(--gold);
+      padding:85px 6%;
+      color:#111;
+    }
+
+    .contact-box{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .contact-box h2{
+      font-size:clamp(2.4rem,5vw,4.6rem);
+      line-height:.96;
+      letter-spacing:-.05em;
+      margin-bottom:18px;
+    }
+
+    .contact-card{
+      background:#111;
+      color:#fff;
+      border-radius:28px;
+      padding:34px;
+      box-shadow:0 28px 70px rgba(0,0,0,.25);
+    }
+
+    .contact-card p{
+      color:#d9d9d9;
+      margin-bottom:12px;
+    }
+
+    .contact-card .phone{
+      font-size:2rem;
+      font-weight:900;
+      color:var(--gold-light);
+      margin-bottom:16px;
+      display:block;
+    }
+
+    footer{
+      background:var(--black);
+      color:#cfcfcf;
+      padding:34px 6%;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      font-size:.92rem;
+    }
+
+    .mobile-call{
+      display:none;
+      position:fixed;
+      bottom:14px;
+      left:14px;
+      right:14px;
+      z-index:20;
+      background:var(--gold-light);
+      color:#111;
+      text-align:center;
+      padding:16px;
+      border-radius:18px;
+      font-weight:900;
+      box-shadow:0 18px 50px rgba(0,0,0,.26);
+    }
+
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .grid,.split,.reviews,.contact-box{grid-template-columns:1fr}
+      .hero{min-height:auto;padding:76px 6%}
+      .topbar{display:none}
+      .mobile-call{display:block}
+      footer{padding-bottom:90px}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"HVACBusiness",
+    "name":"World Class Heating And Cooling",
+    "description":"Heating contractor offering installation and repair services for air conditioning, heating, and ventilation systems.",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"906 N Tennessee St",
+      "addressLocality":"Cartersville",
+      "addressRegion":"GA",
+      "postalCode":"30120"
+    },
+    "telephone":"+1-678-768-1821",
+    "openingHours":["Mo-Fr 08:00-20:00"],
+    "aggregateRating":{
+      "@type":"AggregateRating",
+      "ratingValue":"4.7",
+      "reviewCount":"47"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div><strong>Open Monday–Friday:</strong> 8 AM – 8 PM</div>
+    <div>906 N Tennessee St, Cartersville, GA 30120</div>
+    <div><strong>Call:</strong> (678) 768-1821</div>
+  </div>
+
+  <header>
+    <nav class="nav">
+      <div class="brand">World Class <span>Heating & Cooling</span></div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#areas">Service Areas</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="tel:6787681821">Call Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Cartersville HVAC Repair & Installation</div>
+      <h1>Comfort fixed fast. Done right.</h1>
+      <p>
+        World Class Heating & Cooling helps homeowners and businesses with air conditioning,
+        heating, ventilation, system replacement, and honest HVAC service across Cartersville
+        and Northwest Georgia.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:6787681821">Call (678) 768-1821</a>
+        <a class="btn btn-secondary" href="#contact">Request Service</a>
+      </div>
+
+      <div class="trust-strip">
+        <div class="trust-pill">★★★★★ 4.7 Google Rating</div>
+        <div class="trust-pill">132 HomeAdvisor Reviews</div>
+        <div class="trust-pill">Repair + Replacement</div>
+        <div class="trust-pill">Local Cartersville Contractor</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-title">
+      <div class="eyebrow">What We Do</div>
+      <h2>Clean, dependable HVAC service without the runaround.</h2>
+      <p>
+        Whether your AC stopped cooling, your heat went out, or it is time to replace an aging
+        system, our team keeps the process simple and straightforward.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>AC Repair</h3>
+        <p>Fast troubleshooting for cooling issues, weak airflow, frozen coils, capacitor problems, and system failures.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Heating Service</h3>
+        <p>Repair and maintenance for furnaces, heat pumps, and heating systems when your home needs reliable warmth.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>System Installation</h3>
+        <p>New HVAC system installs and replacements designed for comfort, efficiency, and long-term performance.</p>
+      </div>
+      <div class="card">
+        <div class="num">04</div>
+        <h3>Ventilation</h3>
+        <p>Airflow improvements, ductwork support, and ventilation solutions to help your system perform correctly.</p>
+      </div>
+      <div class="card">
+        <div class="num">05</div>
+        <h3>Second Opinions</h3>
+        <p>Clear recommendations when you want to know whether to repair, replace, or explore another option.</p>
+      </div>
+      <div class="card">
+        <div class="num">06</div>
+        <h3>Maintenance</h3>
+        <p>Seasonal service to help extend equipment life, prevent breakdowns, and keep energy bills under control.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="split">
+      <div class="section-title">
+        <div class="eyebrow">The Difference</div>
+        <h2>Built on fast response, fair pricing, and real local trust.</h2>
+        <p>
+          The best HVAC website should not just look good. It should make a homeowner feel confident
+          enough to call immediately. That is why this page puts reviews, service clarity, and phone access
+          front and center.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h3>When comfort cannot wait, call the local team homeowners already trust.</h3>
+        <p>Serving Cartersville with AC repair, heating service, system replacement, and ventilation support.</p>
+        <div class="checklist">
+          <div class="check">✓ Same-day service messaging</div>
+          <div class="check">✓ Strong review proof above the fold</div>
+          <div class="check">✓ Click-to-call on desktop and mobile</div>
+          <div class="check">✓ Local SEO built into the page</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="section-title">
+      <div class="eyebrow">Local Reputation</div>
+      <h2>Real words from real customers.</h2>
+    </div>
+
+    <div class="reviews">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“Great people, great service, fair prices.”</p>
+        <small>— Danny Moore</small>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“This is my go-to company for heating and air service.”</p>
+        <small>— Stacy Freeman</small>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“Justin and his crew installed a new 4 ton HVAC system in our upstairs attic.”</p>
+        <small>— Kathy Barbee</small>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>“Great service, call Justin with confidence.”</p>
+        <small>— Lorenzo Russo</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="areas">
+    <div class="section-title">
+      <div class="eyebrow">Service Areas</div>
+      <h2>Serving Cartersville and nearby communities.</h2>
+      <p>Local search matters. Adding nearby service areas helps homeowners find the business when they are searching for HVAC help close to home.</p>
+    </div>
+
+    <div class="service-area">
+      <span class="city">Cartersville</span>
+      <span class="city">Emerson</span>
+      <span class="city">Acworth</span>
+      <span class="city">Kennesaw</span>
+      <span class="city">Adairsville</span>
+      <span class="city">Rome</span>
+      <span class="city">Canton</span>
+      <span class="city">Woodstock</span>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-box">
+      <div>
+        <h2>Need HVAC service today?</h2>
+        <p>
+          Call World Class Heating & Cooling for AC repair, heating service, installation,
+          ventilation, and system replacement in Cartersville, GA.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <p>Call now</p>
+        <a class="phone" href="tel:6787681821">(678) 768-1821</a>
+        <p><strong>Address:</strong><br>906 N Tennessee St, Cartersville, GA 30120</p>
+        <p><strong>Hours:</strong><br>Monday–Friday, 8 AM–8 PM<br>Saturday–Sunday, Closed</p>
+        <a class="btn btn-primary" href="tel:6787681821">Tap To Call</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2026 World Class Heating & Cooling</div>
+    <div>HVAC Repair • Heating • Cooling • Ventilation • Cartersville, GA</div>
+  </footer>
+
+  <a class="mobile-call" href="tel:6787681821">Call World Class Heating & Cooling</a>
+</body>
+</html>
